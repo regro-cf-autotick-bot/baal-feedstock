@@ -17,21 +17,21 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
+    - poetry
   run:
-    - python >=3.6
-    - pip
-    - matplotlib-base
-    - numpy
-    - pandas
+    - python >=3.7
+    - pytorch >=1.6.0
+    - h5py >=3.4.0
+    - numpy >=1.21.2
+    - matplotlib >=3.4.3
     - pillow >=6.2.0
-    - pytorch-lightning >=0.8.5
-    - scikit-learn
-    - scipy
-    - structlog
-    - pytorch >=1.5.0
-    - tqdm
+    - tqdm >=4.62.2
+    - pytorch-lightning >=1.4.0
+    - structlog >=21.1.0
+    - scikit-learn >=0.24.2
+    - scipy >=1.7.1
 
 test:
   imports:
