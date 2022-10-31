@@ -1,5 +1,5 @@
 {% set name = "baal" %}
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/baal-{{ version }}.tar.gz
-  sha256: 6ed1a0e11e1e25dcae2b5acaa29a865613f8faf237f7e0e171fd94d0831bc247
+  sha256: 76aceefd5b8108d7a7104beac3ceb6f353754e2ed20ec94e4a500342f1486783
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - python >=3.7
     - pip
     - pytorch >=1.6.0
+    - torchmetrics >=0.9.3
     - h5py >=3.4.0
     - numpy >=1.21.2
     - matplotlib-base >=3.4.3
@@ -39,10 +40,9 @@ test:
     - baal.active
 
 about:
-  home: https://github.com/ElementAI/baal
+  home: https://github.com/baal-org/baal
   summary: Library for bayesian active learning.
   license: Apache-2.0
-  # Ticket for include the license file: https://github.com/ElementAI/baal/issues/99
   license_file: LICENSE
 
 extra:
