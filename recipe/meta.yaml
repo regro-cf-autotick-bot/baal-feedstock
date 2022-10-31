@@ -24,6 +24,7 @@ requirements:
     - python >=3.7
     - pip
     - pytorch >=1.6.0
+    - torchmetrics >=0.9.3
     - h5py >=3.4.0
     - numpy >=1.21.2
     - matplotlib-base >=3.4.3
@@ -39,10 +40,9 @@ test:
     - baal.active
 
 about:
-  home: https://github.com/ElementAI/baal
+  home: https://github.com/baal-org/baal
   summary: Library for bayesian active learning.
   license: Apache-2.0
-  # Ticket for include the license file: https://github.com/ElementAI/baal/issues/99
   license_file: LICENSE
 
 extra:
