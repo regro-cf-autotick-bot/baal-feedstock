@@ -1,11 +1,11 @@
-About baal
-==========
-
-Home: https://github.com/ElementAI/baal
-
-Package license: Apache-2.0
+About baal-feedstock
+====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/baal-feedstock/blob/main/LICENSE.txt)
+
+Home: https://github.com/baal-org/baal
+
+Package license: Apache-2.0
 
 Summary: Library for bayesian active learning.
 
