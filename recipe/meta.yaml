@@ -1,5 +1,5 @@
 {% set name = "baal" %}
-{% set version = "1.7.0" %}
+{% set version = "1.9.2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/baal-{{ version }}.tar.gz
-  sha256: 76aceefd5b8108d7a7104beac3ceb6f353754e2ed20ec94e4a500342f1486783
+  sha256: bf1b7f66a909815a82c0ea6b1a008b75d40cf74b5933e93274f51ef41957fcd0
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
