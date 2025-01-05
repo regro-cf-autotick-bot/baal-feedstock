@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/baal-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baal-{{ version }}.tar.gz
   sha256: 76aceefd5b8108d7a7104beac3ceb6f353754e2ed20ec94e4a500342f1486783
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.8,<4
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pip
     - pytorch >=1.6.0
     - torchmetrics >=0.9.3
@@ -35,6 +35,8 @@ requirements:
     - scipy >=1.7.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - baal
     - baal.active
